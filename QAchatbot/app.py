@@ -34,10 +34,6 @@ prompt = ChatPromptTemplate.from_template(
 )
 input_text = st.text_input("Enter your question")
 
-#Createing button so that by pressing that button entire pdfs will be converted into chunks.
-#and without pressing that button a question is given then wiki will ans that
-
-
 embeddings=OllamaEmbeddings()
 loader=PyPDFDirectoryLoader("./pdfs")
 docs=loader.load()
